@@ -12,7 +12,7 @@ def getCountry(ipAddress):
                 return responseJson.get("country_code")
         
 
-f = open("iplist.txt", "rt")
+f = open(sys.argv[1], "rt")
 lines = f.readlines()
 
 
